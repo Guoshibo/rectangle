@@ -8,23 +8,25 @@
   <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
 </head>
 <body>
-  <h1>矩形计算器</h1>
+<div class="main">
   <div>
-    <label>长度:</label>
-    <input type="text" id="length">
-    <span>*</span>
-    <br>
     <label>宽度:</label>
-    <input type="text" id="width">
+    <input type="text" id="width" autofocus>
     <span>*</span>
     <br>
+    <div id="width-validate"></div>
+    <label>高度:</label>
+    <input type="text" id="height">
+    <span>*</span>
+    <br>
+    <div id="height-validate"></div>
     <button id="calculate">计算</button>
     <br>
     <label>周长:</label>
-    <input type="text" id="perimeter">
+    <input type="text" id="perimeter" disabled="disabled">
     <br>
     <label>面积:</label>
-    <input type="text" id="area">
+    <input type="text" id="area" disabled="disabled">
     <br>
   </div>
   <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
